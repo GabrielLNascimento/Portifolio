@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="menu.js" defer></script>
 </head>
 <body>
     
-    <header>
+    <header id="home">
         <div class="interface">
             <div class="logo">
                 <a href="#" style="text-decoration: none; color: white;" class="texto-logo">
@@ -23,10 +25,10 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#habil">Habilidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
@@ -35,6 +37,32 @@
                     <button>contato</button>
                 </a>
             </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#habil">Habilidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="https://wa.me/5547991015245">
+                            Contato
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
+
         </div> <!-- interface  -->
     </header><!-- cabecalho  -->
 
@@ -59,7 +87,7 @@
             </div><!-- interface  -->
         </section> <!-- topo do site  -->
    
-        <section class="especialidades">
+        <section class="especialidades" id="habil">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
                 <div class="flex">
@@ -77,9 +105,32 @@
                     </div>
 
                     <div class="especialidades-box">
+                        <i class="bi bi-braces"></i>
+                        <h3>Bootstrap</h3>
+                        <p>Framework front-end de código aberto, desenvolvido pelo Twitter, que facilita a criação de sites e aplicações web responsivas e móveis.</p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="flex">
+                    
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Node.js</h3>
+                        <p>Node.js é um ambiente de execução de JavaScript no lado do servidor, proporcionando a criação de aplicações web altamente escaláveis e de alto desempenho.</p>
+                    </div>
+
+                    <div class="especialidades-box">
                         <i class="bi bi-database-add"></i>
                         <h3>Python</h3>
                         <p>Python é uma linguagem de programação versátil e poderosa, utilizada para desenvolvimento web, análise de dados, automação, inteligência artificial e muito mais.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-database-add"></i>
+                        <h3>MySQL</h3>
+                        <p>Sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto, amplamente utilizado. Escolha popular para diversas aplicações, desde pequenos projetos até grandes sistemas corporativos.</p>
                     </div>
 
                     
@@ -89,7 +140,7 @@
             </div>
         </section> <!-- especialidades -->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                    <div class="img-sobre">
@@ -113,7 +164,7 @@
             </div>
         </section> <!-- sobre -->
 
-        <section class="portifolio">
+        <section class="portifolio" id="projetos">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTIFÓLIO</span></h2>
                 <div class="flex">     
@@ -160,6 +211,27 @@
             </div> <!-- interface -->
         </section> <!-- portifolio -->
     </main>
+
+    <footer>
+        <div class="interface">
+            
+            <div class="line-footer">
+                <div class="flex">
+                <div class="logo-footer">
+                    GABRIEL<span>LIZ</span>
+                </div>
+                <div class="btn-social">
+                    <a href="https://github.com/GabrielLNascimento"><button><i class="bi bi-github"></i></button></a>
+                    <a href="https://wa.me/5547991015245"><button><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                </div>
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope"></i> <a href="mailto:gabriellizcfnpbnu@gmail.com">gabriellizcfnpbnu@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
